@@ -1,0 +1,83 @@
+@import '../../layout/colors';
+$header-height: 63px;
+
+.app-header {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: $header-height;
+	background-color: $header-color;
+	box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.15);
+
+	&__right {
+		flex: 1;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+	}
+
+	&__user {
+		display: flex;
+		align-items: center;
+		height: 100%;
+		padding: 0 12px;
+		cursor: pointer;
+
+		&:hover {
+			background-color: rgba(0, 0, 0, 0.1);
+		}
+	}
+
+	&__action {
+		cursor: pointer;
+		height: 100%;
+		width: 48px;
+		padding: 0 12px;
+
+		&:hover {
+			background-color: rgba(0, 0, 0, 0.1);
+		}
+	}
+}
+
+.app-logo {
+	height: 40px;
+	animation: logo-spin infinite 5s linear;
+}
+
+@keyframes logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.user-avatar {
+	height: 40px;
+	border-radius: 50%;
+	margin-right: 16px;
+}
+
+.user-text {
+	margin-right: 16px;
+	color: #5e5e5f;
+	font-size: 1rem;
+}
+
+.dropdown {
+	height: 100%;
+
+	& > a {
+		color: rgba(0, 0, 0, 0.7);
+		display: block;
+		height: 100%;
+	}
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+	color: inherit;
+	background-color: rgba(221, 221, 221, 0.671);
+}

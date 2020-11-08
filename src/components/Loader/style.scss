@@ -1,0 +1,17 @@
+.fullscreen-loader {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: #eff2f7;
+
+	&__text {
+		position: absolute;
+		font-size: 2rem;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}

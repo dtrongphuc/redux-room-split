@@ -1,0 +1,52 @@
+.ant-table {
+	border-radius: 0.25rem;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.ant-table-thead > tr > th {
+	background-color: #fff;
+}
+
+.ant-table-cell:first-child {
+	text-align: center;
+}
+
+.ant-table.ant-table-bordered > .ant-table-title {
+	font-size: 1.2rem;
+	padding-left: 1.1rem !important;
+}
+
+.ant-table.ant-table-middle .ant-table-title,
+.ant-table.ant-table-middle .ant-table-footer,
+.ant-table.ant-table-middle .ant-table-thead > tr > th,
+.ant-table.ant-table-middle .ant-table-tbody > tr > td,
+.ant-table.ant-table-middle tfoot > tr > th,
+.ant-table.ant-table-middle tfoot > tr > td {
+	padding: 12px 10px;
+}
+
+.ant-table-body::-webkit-scrollbar {
+	width: 6px;
+}
+
+.ant-table-body::-webkit-scrollbar-track {
+	background-color: #fff;
+	border-radius: 10px;
+}
+
+.ant-table-body::-webkit-scrollbar-thumb {
+	background-color: rgb(189, 189, 189);
+	outline: none;
+	border-radius: 10px;
+}
+
+.ant-btn {
+	line-height: 1.5;
+	& > span:last-child {
+		margin-left: 4px;
+	}
+}
+
+.anticon {
+	vertical-align: 0;
+}

@@ -1,0 +1,13 @@
+export const AUTH_REQUEST = 'AUTH_REQUEST';
+export const AUTH_RESPONSE = 'AUTH_RESPONSE';
+export const RESPONSE_FAILED = 'RESPONSE_FAILED';
+export const LOGOUT = 'LOGOUT';
+export const ADD_PRODUCT = 'ADD_PRODUCT';
+export const DELETE_PRODUCT = 'DELETE_PRODUCT';
+export const GET_ROOM_INFO = 'GET_ROOM_INFO';
+export const GET_HISTORY = 'GET_HISTORY';
+export const FETCHING = 'FETCHING';
+export const FETCHED = 'FETCHED';
+export const ERROR = 'ERROR';
+export const GET_MEMBERS = 'GET_MEMBERS';
+export const GET_TOTAL_EXPENSE = 'GET_TOTAL_EXPENSE';

@@ -1,0 +1,36 @@
+@import '../../layout/colors';
+
+.app-body {
+	margin-top: 26px;
+	background-color: $bg-color;
+
+	&__text {
+		font-size: 1rem;
+		color: #192039;
+		font-weight: 400;
+
+		&--opaque {
+			font-weight: 500;
+			color: #686c72;
+		}
+	}
+
+	&__copy {
+		cursor: pointer;
+		color: rgba(0, 0, 0, 0.2);
+		margin-left: 0.5rem;
+		margin-bottom: 1px;
+
+		&:hover {
+			color: rgba(0, 0, 0, 0.8);
+		}
+	}
+}
+
+.ant-typography-expand,
+.ant-typography-edit,
+.ant-typography-copy {
+	color: #a7a7a7;
+	position: relative;
+	top: -2px;
+}

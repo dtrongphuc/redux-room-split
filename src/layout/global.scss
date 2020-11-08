@@ -1,0 +1,52 @@
+@import './colors';
+
+body,
+html {
+	position: fixed;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+ul,
+li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+code {
+	color: #096dd9;
+}
+
+.btn {
+	position: relative;
+	text-align: center;
+	background-color: #333333;
+	color: $btn-auth-color;
+	font-size: 1.2rem;
+	vertical-align: middle;
+	border-radius: 12px;
+	border: none;
+	z-index: 1;
+	transition: all 0.4s;
+
+	&:disabled {
+		cursor: not-allowed;
+	}
+
+	&:hover {
+		color: $btn-auth-color;
+	}
+
+	&:not([disabled]):hover.btn:before {
+		opacity: 1;
+	}
+}
