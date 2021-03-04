@@ -154,7 +154,9 @@ const HistoryTable = ({
 				return (
 					<>
 						<div className='d-flex align-items-center justify-content-between'>
-							<Text strong>Sản phẩm đã mua</Text>
+							<Text strong className='table-header__text'>
+								Sản phẩm đã mua
+							</Text>
 							<Button
 								type='primary'
 								icon={<FiPlus />}

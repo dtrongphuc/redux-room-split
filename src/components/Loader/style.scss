@@ -8,10 +8,18 @@
 	background-color: #eff2f7;
 
 	&__text {
-		position: absolute;
+		position: relative;
 		font-size: 2rem;
+		width: 90%;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
+		text-align: center;
+	}
+}
+
+@media (max-width: 576px) {
+	.fullscreen-loader__text {
+		font-size: 1.4rem;
 	}
 }

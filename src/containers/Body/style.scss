@@ -1,7 +1,7 @@
 @import '../../layout/colors';
 
 .app-body {
-	margin-top: 26px;
+	margin-top: calc(26px + 63px);
 	background-color: $bg-color;
 
 	&__text {

@@ -1,7 +1,6 @@
 import React from 'react';
 import { css } from '@emotion/core';
-import BarLoader from 'react-spinners/BarLoader';
-import HashLoader from 'react-spinners/HashLoader';
+import { SyncLoader, BarLoader } from 'react-spinners';
 
 import './style.scss';
 
@@ -15,18 +14,16 @@ const barLoaderStyle = css`
 `;
 
 const fullLoaderStyle = css`
-	display: inline-block;
 	position: fixed;
 	top: 30%;
 	left: 50%;
-	width: unset;
 	transform: translate(-50%, -50%);
 `;
 
 const Loader = ({ fullScreen }) => {
 	return !!fullScreen ? (
 		<div className='fullscreen-loader'>
-			<HashLoader css={fullLoaderStyle} colors='#4158d0' size={130} />
+			<SyncLoader css={fullLoaderStyle} color='#8B572A' size={24} />
 			<p className='fullscreen-loader__text'>
 				Đang khởi động server vui lòng chờ.
 			</p>

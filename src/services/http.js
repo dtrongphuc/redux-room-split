@@ -151,6 +151,14 @@ class api {
 				.catch((err) => reject(err));
 		});
 	}
+
+	updateAccountStatus(userId, isActive) {
+		return new Promise((resolve, reject) => {
+			http.post(`/update/active`, { userId, isActive })
+				.then((data) => resolve(data))
+				.catch((err) => reject(err));
+		});
+	}
 }
 
 export default new api();

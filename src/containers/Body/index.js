@@ -9,6 +9,7 @@ import { getRoomCode, getRoomId } from '../../reducers/room';
 import { getRoomInfoAndMembers } from '../../actions';
 import { getUserId } from '../../reducers/user';
 
+import SwitchActive from '../SwitchActive';
 import Filter from '../../containers/Filter';
 import HistoryTable from '../HistoryTable';
 import MiniLoading from '../../components/MiniLoading';
@@ -106,7 +107,6 @@ const Body = ({ code, roomId, getRoomInfoAndMembers, currentUserId }) => {
 	};
 
 	const fetchData = () => {
-		console.log('fetch', roomId);
 		roomId && getTotalExpense(roomId, month, year);
 		roomId && expenseById(roomId, byId, month, year);
 		roomId && paymentById(roomId, byId, month, year);
@@ -169,6 +169,12 @@ const Body = ({ code, roomId, getRoomInfoAndMembers, currentUserId }) => {
 					<p className='app-body__text app-body__text--opaque'>
 						{currencyFormat(totalExpense)}
 					</p>
+				</div>
+				<div className='d-flex align-items-center justify-content-end mb-2'>
+					<p className='app-body__text app-body__text--opaque mr-2'>
+						Trạng thái hoạt động:
+					</p>
+					<SwitchActive />
 				</div>
 				<div className='d-flex align-items-center justify-content-end'>
 					<Filter

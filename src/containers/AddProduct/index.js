@@ -70,7 +70,9 @@ const AddProduct = ({ modalVisible, setModalVisible, members, addProduct }) => {
 					modifier: 'public',
 					productDate: moment(),
 					productQuantity: 1,
-					members: members.map((member) => member._id),
+					members: members
+						.filter((member) => member.active === true)
+						.map((member) => member._id),
 				}}
 			>
 				<Form.Item

@@ -50,3 +50,9 @@
 .anticon {
 	vertical-align: 0;
 }
+
+@media (max-width: 576px) {
+	.table-header__text {
+		font-size: 1rem;
+	}
+}
